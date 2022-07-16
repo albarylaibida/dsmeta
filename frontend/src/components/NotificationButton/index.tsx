@@ -10,10 +10,11 @@ type Props = {
 }
 
 function handleClique(id :number){
-    axios(`${BASE_URL}/sale/${id}/notification`) 
+    axios(`${BASE_URL}/sales/${id}/notification`) 
         .then(response => {
             toast.info("SMS eviando com sucesso.");
-        })  
+            //console.log("Sucesso!");
+        }) 
 }
 
 
